@@ -1,1 +1,165 @@
-Pardon our dust while we update our site
+<html>
+    <head>
+        <title>Circuits of Value (COVAL)</title>
+        <link href="./bower_components/photoswipe/dist/photoswipe.css" rel="stylesheet">
+        <link href="./bower_components/photoswipe/dist/default-skin/default-skin.css?v=4.1.1-1.0.4" rel="stylesheet">
+        <script src="./bower_components/photoswipe/dist/photoswipe.min.js"></script> 
+        <script src="./bower_components/photoswipe/dist/photoswipe-ui-default.min.js?v=4.1.1-1.0.4"></script>
+        <script>
+            var intro = document.querySelector('.banner');
+            var introPlayer = document.querySelector('.banner__video');
+
+            var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+            if (iOS) {
+                intro.style.backgroundImage = 'url("' + introPlayer.poster + '")';
+                introPlayer.style.display = 'none';
+            }</script>
+        <style>
+            /* clear the body margin */
+            body {
+                margin: 0;
+            }
+
+            .banner {
+                /* this bit of markup is essential */
+                position: relative;
+                overflow: hidden;
+                /* do this shit by yourself */
+                background: rgba(0, 0, 0, 0.5) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=");
+                color: #fff;
+                font-family: 'Raleway', sans-serif;
+                font-size: 1em;
+                font-weight: 700;
+                /* text-transform: uppercase; */
+                text-align: center;
+                line-height: 100vh;
+                letter-spacing: 2px;
+            }
+            .banner .content {
+                line-height: normal;
+                height: 100%;
+                margin-top: 20%;
+            }
+
+            .banner__video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto;
+                min-width: 100%;
+                height: auto;
+                min-height: 100%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                z-index: -1;
+            }
+
+            .spec_link {
+                cursor: pointer;
+                text-decoration-line: underline;
+            }
+            </style>
+    </head>
+
+    <body>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        
+            <!-- Background of PhotoSwipe. 
+                     It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+        
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+        
+                <!-- Container that holds slides. 
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+        
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+        
+                    <div class="pswp__top-bar">
+        
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+        
+                        <div class="pswp__counter"></div>
+        
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+        
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+        
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+        
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+        
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        <div class="banner">
+            Circuits of Value - Preview Emblem Vault Specification: <a class="spec_link" onclick="javascript:galleryInit()">Here</a>
+            <video autoplay loop muted class="banner__video" poster="./media/background-min.png">
+                <source src="./media/circuit.animation.webm" type="video/webm">
+                <source src="./media/circuit.animation.mp4" type="video/mp4">
+            </video>
+        </div>
+        <script>
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            var gallery
+            var galleryInit = function(){
+                var items = [
+                    {
+                        src: './media/EmblemVault.Specification-Flow.png',
+                        w: 931,
+                        h: 2692
+                    }
+                ];
+
+                // define options (if needed)
+                var options = {
+                    // optionName: 'option value'
+                    // for example:
+                    index: 0 // start at first slide
+                };
+
+                // Initializes and opens PhotoSwipe
+                gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init()
+            }
+            
+            </script>
+    </body>
+
+</html>
