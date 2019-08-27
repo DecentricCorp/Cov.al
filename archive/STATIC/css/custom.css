@@ -20,7 +20,7 @@ body {
     left: 0;
     bottom: 0;
     background-color: transparent;
-    background-image: url("/STATIC/image/video_landing.jpg");
+    background-image: url("./STATIC/image/video_landing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
