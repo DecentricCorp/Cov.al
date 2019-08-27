@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'formular';
+    src: url('fonts/formular-regular-webfont.eot');
+    src: url('fonts/formular-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/formular-regular-webfont.woff2') format('woff2'),
+         url('fonts/formular-regular-webfont.woff') format('woff'),
+         url('fonts/formular-regular-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'formular';
+    src: url('fonts/formular-light-webfont.eot');
+    src: url('fonts/formular-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/formular-light-webfont.woff2') format('woff2'),
+         url('fonts/formular-light-webfont.woff') format('woff'),
+         url('fonts/formular-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
