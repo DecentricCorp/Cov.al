@@ -1,166 +1,233 @@
-<html>
-    <head>
-        <title>Circuits of Value (COVAL)</title>
-        <link href="./bower_components/photoswipe/dist/photoswipe.css" rel="stylesheet">
-        <link href="./bower_components/photoswipe/dist/default-skin/default-skin.css?v=4.1.1-1.0.4" rel="stylesheet">
-        <script src="./bower_components/photoswipe/dist/photoswipe.min.js"></script> 
-        <script src="./bower_components/photoswipe/dist/photoswipe-ui-default.min.js?v=4.1.1-1.0.4"></script>
-        <script>
-            var intro = document.querySelector('.banner');
-            var introPlayer = document.querySelector('.banner__video');
-
-            var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
-            if (iOS) {
-                intro.style.backgroundImage = 'url("' + introPlayer.poster + '")';
-                introPlayer.style.display = 'none';
-            }</script>
-        <style>
-            /* clear the body margin */
-            body {
-                margin: 0;
-            }
-
-            .banner {
-                /* this bit of markup is essential */
-                position: relative;
-                overflow: hidden;
-                /* do this shit by yourself */
-                background: rgba(0, 0, 0, 0.5) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=");
-                color: #fff;
-                font-family: 'Raleway', sans-serif;
-                font-size: 1em;
-                font-weight: 700;
-                /* text-transform: uppercase; */
-                text-align: center;
-                line-height: 100vh;
-                letter-spacing: 2px;
-            }
-            .banner .content {
-                line-height: normal;
-                height: 100%;
-                margin-top: 20%;
-            }
-
-            .banner__video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: auto;
-                min-width: 100%;
-                height: auto;
-                min-height: 100%;
-                -webkit-transform: translateX(-50%) translateY(-50%);
-                        transform: translateX(-50%) translateY(-50%);
-                z-index: -1;
-            }
-
-            .spec_link {
-                cursor: pointer;
-                text-decoration-line: underline;
-            }
-            </style>
-    </head>
-
-    <body>
-        <!-- Root element of PhotoSwipe. Must have class pswp. -->
-        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        
-            <!-- Background of PhotoSwipe. 
-                     It's a separate element as animating opacity is faster than rgba(). -->
-            <div class="pswp__bg"></div>
-        
-            <!-- Slides wrapper with overflow:hidden. -->
-            <div class="pswp__scroll-wrap">
-        
-                <!-- Container that holds slides. 
-                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                        Don't modify these 3 pswp__item elements, data is added later on. -->
-                <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Wed Aug 28 2019 20:06:53 GMT+0000 (UTC)  -->
+<html data-wf-page="5d2f71cb36656904100363c8" data-wf-site="5d2f71ca366569da380363c4">
+<head>
+  <meta charset="utf-8">
+  <title>Circuits of Value is BACK!</title>
+  <meta content="Having landed on the Ethereum Blockchain we are busy making crypto simple." name="description">
+  <meta content="Circuits of Value is BACK!" property="og:title">
+  <meta content="Having landed on the Ethereum Blockchain we are busy making crypto simple." property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/coval-reborn.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="icons/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div data-w-id="46f30dce-815f-e131-7241-03b83f4cfd30" style="display:flex" class="loading-section">
+    <h2 data-w-id="0141a556-f32e-81bf-262c-b3b59e940a42" style="opacity:0;-webkit-transform:translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-3">Circuits of Value<br>is <span class="text-span-3">back.</span></h2>
+    <div class="curved-top"></div>
+    <div class="curved-item">
+      <div class="left-side-curve"></div>
+    </div>
+    <div class="curved-item right">
+      <div class="right-side-curve"></div>
+    </div>
+  </div>
+  <div class="navbar-div">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar-3 w-nav">
+      <div><a href="#" class="brand w-nav-brand"><img src="images/203323371-transparent.svg" width="74.5" alt="Epic image" class="epic-image"></a>
+        <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" class="nav-link w-nav-link w--current">Home</a><a href="docs/circuits-of-value-overview.html" class="nav-link w-nav-link">Light Paper</a><a href="roadmap.html" class="nav-link-4 w-nav-link">Roadmap</a><a href="docs/circuits-of-value-position-paper.html" class="nav-link w-nav-link">Position Paper</a><a href="docs/circuits-of-value-philosophy-paper.html" class="nav-link w-nav-link">Philosophy Paper</a><a href="docs/circuits-of-value-movable-value.html" class="nav-link-3 w-nav-link">Value</a><a href="docs/circuits-of-value-crowdfunding-creed.html" class="nav-link w-nav-link">Crowdfunding</a><a href="docs/all-things-open.html" class="nav-link-2 w-nav-link">All Things Open</a><a href="docs/synrg.html" class="nav-link-7 w-nav-link">History</a></nav>
+        <div class="w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+    <div class="div-block-14">
+      <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper"><a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block"><svg class="w-commerce-commercecartopenlinkicon" width="17px" height="17px" viewbox="0 0 17 17"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z" fill="currentColor" fill-rule="nonzero"></path></g></svg><div class="w-inline-block">Cart</div><div class="w-commerce-commercecartopenlinkcount">0</div></a>
+        <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal">
+          <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer">
+            <div class="w-commerce-commercecartheader">
+              <h4 class="w-commerce-commercecartheading">Your Cart</h4><a href="#" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink w-inline-block"><svg width="16px" height="16px" viewbox="0 0 16 16"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#333333"><polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon></g></g></svg></a></div>
+            <div class="w-commerce-commercecartformwrapper">
+              <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform">
+                <script type="text/x-wf-template" id="wf-template-098b8246-b8ae-b6fb-98f6-9c9e6c6e3db2"></script>
+                <div class="w-commerce-commercecartlist" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-098b8246-b8ae-b6fb-98f6-9c9e6c6e3db2"></div>
+                <div class="w-commerce-commercecartfooter">
+                  <div class="w-commerce-commercecartlineitem">
+                    <div>Subtotal</div>
+                    <div class="w-commerce-commercecartordervalue"></div>
+                  </div>
+                  <div>
+                    <div data-node-type="commerce-cart-quick-checkout-actions">
+                      <a data-node-type="commerce-cart-apple-pay-button" style="background-image:-webkit-named-image(apple-pay-logo-white);background-size:100% 50%;background-position:50% 50%;background-repeat:no-repeat" class="w-commerce-commercecartapplepaybutton">
+                        <div></div>
+                      </a><a data-node-type="commerce-cart-quick-checkout-button" style="display:none" class="w-commerce-commercecartquickcheckoutbutton"><svg class="w-commerce-commercequickcheckoutgoogleicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16"><defs><polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649"></polygon><polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443"></polygon></defs><g fill="none" fill-rule="evenodd"><path fill="#4285F4" d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469"></path><path fill="#34A853" d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16"></path><g transform="translate(0 4)"><mask id="google-mark-b" fill="#fff"><use xlink:href="#google-mark-a"></use></mask><path fill="#FBBC04" d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337" mask="url(#google-mark-b)"></path></g><mask id="google-mark-d" fill="#fff"><use xlink:href="#google-mark-c"></use></mask><path fill="#EA4335" d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291" mask="url(#google-mark-d)"></path></g></svg><svg class="w-commerce-commercequickcheckoutmicrosofticon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><g fill="none" fill-rule="evenodd"><polygon fill="#F05022" points="7 7 1 7 1 1 7 1"></polygon><polygon fill="#7DB902" points="15 7 9 7 9 1 15 1"></polygon><polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9"></polygon><polygon fill="#FFB700" points="15 15 9 15 9 9 15 9"></polygon></g></svg><div>Pay with browser.</div></a></div><a href="checkout.html" value="Continue to Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton" data-loading-text="Hang Tight...">Continue to Checkout</a></div>
                 </div>
-        
-                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                <div class="pswp__ui pswp__ui--hidden">
-        
-                    <div class="pswp__top-bar">
-        
-                        <!--  Controls are self-explanatory. Order can be changed. -->
-        
-                        <div class="pswp__counter"></div>
-        
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-        
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        
-                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                        <!-- element will get class pswp__preloader--active when preloader is running -->
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                                <div class="pswp__preloader__cut">
-                                    <div class="pswp__preloader__donut"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div>
-                    </div>
-        
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                    </button>
-        
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                    </button>
-        
-                    <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
-                    </div>
-        
-                </div>
-        
+              </form>
+              <div class="w-commerce-commercecartemptystate">
+                <div>No items found.</div>
+              </div>
+              <div style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate">
+                <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-general-error="Something went wrong when adding this item to the cart.">Product is not available in this quantity.</div>
+              </div>
             </div>
-        
+          </div>
         </div>
-        <div class="banner">
-            Circuits of Value - We are under construction. Take a look at some old content while you wait. <a class="spec_link" href="/archive">Here</a>
-            <video autoplay loop muted class="banner__video" poster="./media/background-min.png">
-                <source src="./media/circuit.animation.webm" type="video/webm">
-                <source src="./media/circuit.animation.mp4" type="video/mp4">
-            </video>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="06341bb2-6451-4474-d23e-e8442456ae7c" class="hero-section">
+    <div class="container less-top not-relative w-container">
+      <div class="flex-row">
+        <div class="hold-headings">
+          <h3 data-w-id="d2a92664-d461-f246-a09b-3cfa7c9c043f" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-6">About Coval Token</h3>
+          <h1 data-w-id="fba2ca2e-8f54-c3ba-74ed-29b0c680d64f" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-heading hidden">- ERC20 Contract</h1>
+          <h1 data-w-id="6db6b525-a715-be36-0487-d6aeee974289" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-heading hidden">- Secure</h1>
+          <h1 data-w-id="b3bbcaca-3037-c215-5949-2b55f16730b7" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-heading hidden">- Upgradable</h1>
+          <h1 data-w-id="fa079933-42f6-cfd1-9e07-e0b67b6f45e2" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-heading hidden">- Burnable</h1>
+          <h1 data-w-id="dac6d156-af9e-b1a2-24a2-bfb82221cceb" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-heading hidden">- Stake to Earn</h1>
+          <a href="https://etherscan.io/token/0x3d658390460295fb963f54dc0899cfb1c30776df" class="link-block w-inline-block">
+            <h1 class="hero-heading hidden">- Etherscan</h1>
+          </a>
         </div>
-        <script>
-            var pswpElement = document.querySelectorAll('.pswp')[0];
-            var gallery
-            var galleryInit = function(){
-                var items = [
-                    {
-                        src: './media/EmblemVault.Specification-Flow.png',
-                        w: 931,
-                        h: 2692
-                    }
-                ];
-
-                // define options (if needed)
-                var options = {
-                    // optionName: 'option value'
-                    // for example:
-                    index: 0, // start at first slide,
-                    bgOpacity: 0.5
-                };
-
-                // Initializes and opens PhotoSwipe
-                gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-                gallery.init()
-            }
-            
-            </script>
-    </body>
-
+        <div data-w-id="80541922-3e49-ab57-2f4a-7c71d4bb5520" class="hold-logo"><img src="images/203323371-transparent.svg" width="383" alt="Epicurrence 2018 Badge" class="image-9"></div>
+        <div class="hold-ticket-link-and-heading">
+          <h3 data-w-id="044dc31d-1cab-062f-88f9-93a6236c5030" style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-2">Circuits of Value <br>is back!</h3>
+          <div data-w-id="d78e5e54-e71e-0c52-ca33-b49f266b78e3" style="opacity:0;-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hold-dates">
+            <div class="text-block">2019</div>
+            <div class="text-block-2">Coval On<br>Ethereum Blockchain</div>
+          </div>
+          <a href="https://swap.circuitsofvalue.com" target="_blank" data-w-id="e64a0eb4-fc31-02cb-2357-88ac4ff0b154" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button w-inline-block">
+            <div data-w-id="e80811be-5d99-954c-9b08-a2eafc168511" class="text-block-3">SWAP TODAY</div>
+            <div data-w-id="dec207ba-d0c3-a695-5d15-0d7a2b8b4976" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="text-block-3 absolute w-hidden-tiny">SWAP TODAY</div>
+            <div data-w-id="2e8b38f7-d565-5501-bf0e-66bbdd95eede" style="-webkit-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="absolute-block"></div>
+          </a>
+          <div data-w-id="9bbb9d1f-f7cf-8e12-e15e-cb32e4091a01" style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="div-block-3">
+            <p class="centered-hero-text">Legacy Coval tokens are not actively in use, Swap yours for the new ERC20 tokens today.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row w-row">
+        <div class="column-5 w-col w-col-4"></div>
+        <div data-w-id="fba2ca2e-8f54-c3ba-74ed-29b0c680d653" style="opacity:0" class="hold-logo w-col w-col-4"></div>
+        <div class="column-6 w-col w-col-4"></div>
+      </div>
+    </div><img src="images/orange-circuitboard-mobile.png" srcset="images/orange-circuitboard-mobile-p-500.png 500w, images/orange-circuitboard-mobile.png 765w" sizes="100vw" alt="" class="absolute-mobile-hero-bg-image"><img src="images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15.png" srcset="images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15-p-500.png 500w, images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15-p-800.png 800w, images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15-p-1080.png 1080w, images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15-p-1600.png 1600w, images/videoblocks-printed-circuit-board-in-the-server-executes-the-code-orange-green-technology-background-circuit-board-and-code_sghiuav6l_thumbnail-full15.png 1920w" sizes="100vw" alt="" class="background-image large"></div>
+  <div class="section treasure-hunt">
+    <div data-w-id="25a8e409-38e4-2899-311c-18f167b12e52" class="container w-container">
+      <div class="number">02 Technology</div>
+      <div class="row w-row">
+        <div data-w-id="25a8e409-38e4-2899-311c-18f167b12e56" class="w-col w-col-5">
+          <h1>Emblem Vault</h1>
+          <p class="white-paragraph">Emblem Vault enables the movement of assets regardless of their underlying chain. Emblem Vault was built to enable Coval to realize its vision.</p><img src="images/emblem-wallet-fade.png" width="481" srcset="images/emblem-wallet-fade-p-500.png 500w, images/emblem-wallet-fade.png 591w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 39vw" alt=""></div>
+        <div data-w-id="25a8e409-38e4-2899-311c-18f167b12e59" class="column-7 w-col w-col-7">
+          <h1>Crypto E-Commerse</h1>
+          <p class="white-paragraph">Easily create a full catalog store, or make a simple donation or event ticket sales page in a few clicks. <br>‍<br></p><img src="images/coval-store.png" width="536" srcset="images/coval-store-p-500.png 500w, images/coval-store.png 1072w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 49vw, 44vw" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="section treasure-hunt">
+    <div data-w-id="50920fea-5bfd-17e4-21f2-f0058734c7ba" class="container w-container">
+      <div class="number">02 Technology</div>
+      <div class="row w-row">
+        <div data-w-id="50920fea-5bfd-17e4-21f2-f0058734c7ce" class="w-col w-col-5">
+          <h1>CovalToken.sol</h1>
+          <p class="white-paragraph">CovalToken.sol is our current incarnation of the smart contract that defines the behavior of the Circuits of Value token. </p><img src="images/erc20.png" width="481" alt=""></div>
+        <div data-w-id="50920fea-5bfd-17e4-21f2-f0058734c7d4" class="column-7 w-col w-col-7">
+          <h1>Coval.js</h1>
+          <p class="white-paragraph">Coval.js is a library wrapping many crypto and cryptocurrency libraries, along with an interface to remotely hosted services. <br>‍<br></p><img src="images/Coval.js.png" width="536" srcset="images/Coval.js-p-1080.png 1080w, images/Coval.js.png 1167w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 49vw, 44vw" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="ce0466de-e7b2-1808-242d-e5df157e8fd3" class="section creative-challenge"><img src="images/orange-circuitboard-mobile.png" srcset="images/orange-circuitboard-mobile-p-500.png 500w, images/orange-circuitboard-mobile.png 765w" sizes="100vw" data-w-id="405b7178-b771-9a7c-920b-8def1d57783e" alt="" class="bg-image v2"></div>
+  <div class="section">
+    <div class="bottom-image-section"><img src="images/fireplace.png" width="800" srcset="images/fireplace-p-500.png 500w, images/fireplace.png 1600w" sizes="100vw" alt="" class="campfire-image"></div><a href="https://dribbble.com/ursooperduper" target="_blank" class="left-side-link hero-link v2 w-inline-block"></a></div>
+  <div class="section overflow-visible">
+    <a href="https://dribbble.com/Zhenya_Artem" target="_blank" data-w-id="b6180e6e-9867-7aae-1fb3-6c70bbd60209" style="-webkit-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="left-side-link hero-link v2 top w-inline-block">
+      <div class="text-block-4 taller">*Illustration By <span class="text-span">Anastasia</span></div><img src="images/anastasia15x_1anastasia15x.png" width="34.5" alt="" class="image-6"></a>
+    <div class="container w-container">
+      <div class="number">03 About</div>
+      <div class="row w-row">
+        <div class="w-col w-col-8">
+          <h1>Coval is the vision of Shannon Code a software developer from Raleigh NC. </h1>
+          <p>Inventing the future since before he was in high school. He has built <a href="https://www.youtube.com/watch?v=9gqmoj3VuMU">Bots for World of Warcraft,</a> an internal blockchain based rewards system for <a href="https://www2.deloitte.com/content/dam/Deloitte/global/Documents/grid/dcoins-sales-card-2016.pdf">Deloitte</a>, and was mentioned in engadget for <a href="https://www.engadget.com/amp/2006/01/31/how-to-run-flash-games-on-your-xbox-360/">hacking the xbox 360</a> to play flash games. <br><br>Shannon&#x27;s open source contributions include Ethereum, Cryptocoinjs, JPMorganChase, Zapier and others. Shannon has seen the creation of Ethereum, was an early member of Hyperledger Foundation &amp; even managed to break the Omni / Mastercoin network one time with a <a href="https://omniexplorer.info/asset/2147483687" target="_blank">cleverly named asset. </a><br><br>Shannon is named <a href="https://patents.justia.com/inventor/shannon-code">inventor on several patent applications</a> and predicted the DAO hack years before it launched. </p>
+        </div>
+        <div class="w-col w-col-4"><img src="images/shannon.jpg" alt="" class="image-10">
+          
+        </div>
+      </div>
+      <div class="div-block-5">
+        <div data-w-id="d0b9df81-06bd-3a61-aca8-c628142fdb33" class="video-link"><a href="https://www.youtube.com/watch?v=6OLGB9CUnvs" target="_blank" class="w-inline-block"><img src="images/Screen-Shot-2019-07-23-at-10.50.37-PM.png" width="145" srcset="images/Screen-Shot-2019-07-23-at-10.50.37-PM-p-500.png 500w, images/Screen-Shot-2019-07-23-at-10.50.37-PM.png 614w" sizes="(max-width: 479px) 69vw, (max-width: 991px) 18vw, 145px" alt="" class="image-11"></a>
+          <div class="text-block-5">Emblem Vault Video</div>
+        </div>
+        <div data-w-id="cce1c879-8c6c-f989-19d6-4c96dae4b520" class="video-link"><a href="https://www.youtube.com/watch?v=og7IoJCMOCw" target="_blank" class="w-inline-block"><img src="images/Screen-Shot-2019-07-23-at-10.54.51-PM.png" width="150" srcset="images/Screen-Shot-2019-07-23-at-10.54.51-PM-p-500.png 500w, images/Screen-Shot-2019-07-23-at-10.54.51-PM.png 602w" sizes="(max-width: 479px) 92vw, (max-width: 991px) 18vw, 150px" alt="" class="image-11"></a>
+          <div class="text-block-5">Blockchain Security</div>
+        </div>
+        <div data-w-id="d56a6730-6e7d-6246-3772-e2eb44dd936c" class="video-link"><a href="https://www.youtube.com/watch?v=la-kG1Cb2II" target="_blank" class="w-inline-block"><img src="images/Screen-Shot-2019-07-23-at-10.57.31-PM.png" width="173" srcset="images/Screen-Shot-2019-07-23-at-10.57.31-PM-p-500.png 500w, images/Screen-Shot-2019-07-23-at-10.57.31-PM.png 624w" sizes="(max-width: 479px) 56vw, (max-width: 991px) 21vw, 173px" alt="" class="image-11"></a>
+          <div class="text-block-5">Crypto Cloud Talk</div>
+        </div>
+        <div data-w-id="11758943-9da1-b748-13ed-4ac11179a74b" class="video-link"><a href="https://www.youtube.com/watch?v=zHeab9vq2cA" target="_blank" class="w-inline-block"><img src="images/Screen-Shot-2019-07-23-at-10.59.59-PM.png" width="141" alt="" class="image-11"></a>
+          <div class="text-block-5">Future of Blockchain</div>
+        </div>
+        <div data-w-id="3566adf5-2751-50af-0dcd-09f48ab7915f" class="video-link"><a href="docs/all-things-open.html" target="_blank" class="w-inline-block"><img src="images/odeokee-watermark-slide.png" width="173" alt="" class="image-11"></a>
+          <div class="text-block-5">Digital Blockchain Media</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section"></div>
+  <div class="section padded"><img src="images/203323371-transparent.svg" alt="Epicurrence Badge" width="500" data-w-id="24ac6438-acfb-0746-43b3-4cd2d0fd689f" class="image-3"><img src="images/coval-circle-text-white.png" width="262" srcset="images/coval-circle-text-white-p-500.png 500w, images/coval-circle-text-white.png 648w" sizes="100vw" data-w-id="0a73fde8-f703-9e3a-e9e2-fbfb3a57424e" alt="" class="image-3 v2">
+    <h3 class="mega-heading">HUGE THANKS TO everyone in our Telegram<br>FOR lending a hand!</h3>
+  </div>
+  <div class="footer">
+    <div class="container w-container">
+      <div class="row flexed w-row">
+        <div class="column w-col w-col-8">
+          <h2 class="large-heading">Conference time</h2>
+          <h2 class="heading larger">August 27-30<br>Cryptolina Atlanta</h2>
+        </div>
+        <div class="column-2 w-col w-col-4">
+          <div class="div-block-3">
+            <p class="centered-hero-text">Only *99 spots available. <br>Want to come but</p>
+            <a href="#" data-w-id="92a865f9-e4cd-96a8-e9b8-98d89d991a34" class="div-block-4 w-inline-block">
+              <div class="centered-hero-text">can&#x27;t pay yet?</div>
+              <div class="link-line"></div>
+            </a>
+          </div>
+          <a href="https://www.epicurrence.com/" target="_blank" data-w-id="d09653ad-89a5-d9b2-9bb7-936a9b1100dc" class="button margined w-inline-block">
+            <div data-w-id="d09653ad-89a5-d9b2-9bb7-936a9b1100dd" class="text-block-3">GET TICKET</div>
+            <div data-w-id="d09653ad-89a5-d9b2-9bb7-936a9b1100df" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(90DEG) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="text-block-3 absolute v2">GET TICKET</div>
+            <div data-w-id="d09653ad-89a5-d9b2-9bb7-936a9b1100e1" style="-webkit-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 110%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="absolute-block"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer w-container">
+      <div class="flex-footer">
+        <div class="left-side">
+          <a href="#" data-w-id="a94e6ebb-78da-8e9c-c601-d995d2cff111" class="div-block-4 shortened full w-inline-block">
+            <div class="centered-hero-text all-caps full">Community Code of Conduct</div>
+            <div class="link-line short fullen"></div>
+          </a>
+          <a href="#" data-w-id="6ad6d24a-2e99-44a4-0846-c5827141b1d7" class="div-block-4 shortened full margined w-inline-block">
+            <div class="centered-hero-text all-caps full">shannon.null.code@gmail.com</div>
+            <div class="link-line short fullen"></div>
+          </a>
+          <a href="#" data-w-id="26526cf6-9cfb-2677-bd3d-a3c09df982d6" class="div-block-4 shortened full margined w-inline-block">
+            <div class="centered-hero-text all-caps full">@CircuitsOfValue</div>
+            <div class="link-line short fullen"></div>
+          </a>
+        </div>
+        <div class="right-side"><img src="images/203323371-transparent.svg" width="111" alt="" class="image-8"></div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="da42005d-6369-46bb-b6b1-401f0cef7df2" style="display:none;opacity:1" class="modal__parent">
+    <div data-w-id="da42005d-6369-46bb-b6b1-401f0cef7df3" class="modal__bg"></div>
+    <div data-w-id="da42005d-6369-46bb-b6b1-401f0cef7df4" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="modal__container">
+      <h3 class="modal__heading">Thanks for Visiting!</h3>
+      <div data-w-id="da42005d-6369-46bb-b6b1-401f0cef7dfa" class="close-button">+</div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
 </html>
